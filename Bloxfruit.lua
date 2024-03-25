@@ -32,14 +32,16 @@ MinimizeButton({
   StrokeColor = Color3.fromRGB(255, 0, 0)
 })
 
-local Main = MakeTab({Name = "Book 1"})
+local Main = MakeTab({Name = "Main"})
 
 local section = AddSection(Main, {"Teste"})
-SetSection(section, "Chapter 1")
-
-_G.AutoFarm_Level = true
-_G.FastAttack = true
-
+SetSection(section, "Farm")
+local Toggle = AddToggle(Main, {
+  Name = "Auto Farm",
+  Default = false,
+  Callback = function(Value)
+    _G.AutoFarm_Level = true
+    _G.FastAttack = true
 
 
 
@@ -180,3 +182,5 @@ spawn(function()
     end)
 end) 
 end)
+  end
+})
