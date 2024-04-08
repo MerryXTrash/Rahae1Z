@@ -63,8 +63,68 @@ AddButton(Main, {
   end
 })
 AddButton(Main, {
-  Name = "Middle Town",
+  Name = "Orange Archipelogo",
   Callback = function()
     game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-75.77444458007812, 68.12995147705078, -27.089778900146484)
+  end
+})
+AddButton(Main, {
+  Name = "Ape realm(jungle)",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(864.9637451171875, 64.3056411743164, -1247.462646484375)
+  end
+})
+AddButton(Main, {
+  Name = "Frost isle(Snow 1)",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1985.66845703125, 132.70187377929688, -70.07811737060547)
+  end
+})
+AddButton(Main, {
+  Name = "Niflheim Island(Snow 2)",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2280.298583984375, 203.77406311035156, -2256.560302734375)
+  end
+})
+AddButton(Main, {
+  Name = "Arena",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1884.7598876953125, 43.08702087402344, -3036.061279296875)
+  end
+})
+AddButton(Main, {
+  Name = "Warrior's Retreat",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-578.0498657226562, 82.4849853515625, -4010.571533203125)
+  end
+})
+AddButton(Main, {
+  Name = "Forgotten Isle",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-659.7974853515625, 55.475521087646484, -1918.882080078125)
+  end
+})
+AddButton(Main, {
+  Name = "Curse isle",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new( -2430.9384765625, 199.80801391601562, -1327.1156005859375)
+  end
+})
+AddButton(Main, {
+  Name = "Autumnal Archipelogo(Blacksmith)",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1813.936279296875, 81.51451873779297, 642.5896606445312)
+  end
+})
+AddButton(Main, {
+  Name = "Manga Island",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-903.2269287109375, 41.313140869140625, 1055.79541015625)
+  end
+})
+AddButton(Main, {
+  Name = "Chxmei Island",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(514.4616088867188, 34.99990463256836, -3092.47265625)
   end
 })
