@@ -45,8 +45,14 @@ local Main = MakeTab({Name = "Teleport"})
 local section = AddSection(Main, {"Teste"})
 SetSection(section, "Teleport")
 AddButton(Main, {
-  Name = "Forgotten Island",
+  Name = "Starter Island",
   Callback = function()
-    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-659.4487915039062, 55.475521087646484, -1921.4376220703125)
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-852.4805908203125, 35.29999542236328, -536.9486694335938)
+  end
+})
+AddButton(Main, {
+  Name = "Middle Town",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-75.77444458007812, 68.12995147705078, -27.089778900146484)
   end
 })
