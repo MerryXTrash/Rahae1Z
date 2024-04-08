@@ -44,10 +44,35 @@ MinimizeButton({
   StrokeColor = Color3.fromRGB(255, 0, 0)
 })
 
+--farm
 local Main = MakeTab({Name = "Main"})
-
 local section = AddSection(Main, {"Teste"})
-SetSection(section, "Farm")
+SetSection(section, "By Xenon hub")
+SetSection(section, "By Xenon hub")
+SetSection(section, "By Xenon hub")
+AddButton(Main, {
+  Name = "Auto Farm",
+  Callback = function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d466f2635b8c88302bbe9019bc7fee4.lua"))()
+  end
+})
+SetSection(section, "EQUIP : COMBAT(only combat)")
+SetSection(section, "GUI at left Screen")
+SetSection(section, "IF you die/Bug Just Off and Open again")
+SetSection(section, "By Xenon hub")
+SetSection(section, "By Xenon hub")
+SetSection(section, "By Xenon hub")
+
+--Item
+local Main = MakeTab({Name = "Item"})
+local section = AddSection(Main, {"Teste"})
+SetSection(section, "Auto Item")
+
+
+--Shop
+local Main = MakeTab({Name = "Shop"})
+local section = AddSection(Main, {"Teste"})
+SetSection(section, "NPC")
 
 
 
@@ -126,5 +151,17 @@ AddButton(Main, {
   Name = "Chxmei Island",
   Callback = function()
     game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(514.4616088867188, 34.99990463256836, -3092.47265625)
+  end
+})
+
+
+--Setting
+local Main = MakeTab({Name = "Setting"})
+local section = AddSection(Main, {"Teste"})
+SetSection(section, "Setting")
+AddButton(Main, {
+  Name = "Fastmode",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-852.4805908203125, 35.29999542236328, -536.9486694335938)
   end
 })
