@@ -109,8 +109,7 @@ SetSection(section, "GUI at left Screen")
 SetSection(section, "IF you die/Bug Just Off and Open again")
 SetSection(section, "By Xenon hub")
 SetSection(section, "By Xenon hub")
-SetSection(section, "By Xenon hub")
-
+SetSection(section, "Skill")
 local Toggle = AddToggle(Main, {
   Name = "Auto Skill",
   Default = true,
@@ -130,7 +129,6 @@ pressKey("f", 1, 1)
       end
   end
 })
-
 
 
 
