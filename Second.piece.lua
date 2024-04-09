@@ -65,7 +65,7 @@ SetSection(section, "By Xenon hub")
 
 local Toggle = AddToggle(Main, {
   Name = "Auto Skill",
-  Default = false,
+  Default = true,
   Callback = function(Value)
     local utf8 = {
     ["A"] = 0x41,
@@ -131,23 +131,18 @@ pressKey("f", 1, 1)
   end
 })
 
+
+
 --tool
 local Main = MakeTab({Name = "LocalPlayer"})
 local section = AddSection(Main, {"Teste"})
 SetSection(section, "It can help you(I Think)")
-
 AddButton(Main, {
   Name = "Infinite yield",
   Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   end
 })
-SetSection(section, "Important CMD")
-SetSection(section, "fly -numbers")
-SetSection(section, "to -Player")
-SetSection(section, "tpwalk numbers")
-SetSection(section, "cfly numbers")
-
 
 --Item
 local Main = MakeTab({Name = "Item"})
