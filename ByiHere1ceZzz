@@ -22,7 +22,7 @@ repeat
     wait()
 until game.Players.LocalPlayer
 --main
-local ui_link = "https://raw.githubusercontent.com/ZoiIntra/Dec/main/afsZz.lua"
+local ui_link = "https://raw.githubusercontent.com/MerryXTrash/Rahae1Z/main/afsZz.lua.txt"
 local a = loadstring(game:HttpGet(ui_link))()
 local a = a:Window("Xozaity | Blox Fruit")
 local HomePage = a:Tab("Home", "rbxassetid://16062922985")
