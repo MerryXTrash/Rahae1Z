@@ -10142,14 +10142,3 @@ while cac() do
 	AttackNoCD()
 end
 end)
-
-getgenv().NoDieEffect = true
-if getgenv().NoDieEffect then
-    local effectContainer = game:GetService("ReplicatedStorage").Effect.Container
-    if effectContainer:FindFirstChild("Death") then
-        effectContainer.Death:Destroy()
-    end
-    if effectContainer:FindFirstChild("Respawn") then
-        effectContainer.Respawn:Destroy()
-    end
-end
