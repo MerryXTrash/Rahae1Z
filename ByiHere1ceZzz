@@ -10166,3 +10166,13 @@ spawn(function()
         effectContainer.LevelUp:Destroy()
     end
 end)
+
+spawn(function()
+game:GetService("VirtualUser"):CaptureController()
+	game:GetService("VirtualUser"):ClickButton1(Vector2.new(851, 158), game:GetService("Workspace").Camera.CFrame)
+end
+function Click()
+	game:GetService("VirtualUser"):CaptureController()
+	game:GetService("VirtualUser"):Button1Down(Vector2.new(1280, 672))
+end
+end)
