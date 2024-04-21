@@ -10153,3 +10153,16 @@ if getgenv().NoDieEffect then
         effectContainer.Respawn:Destroy()
     end
 end
+
+spawn(function()
+    while wait() do
+        local rs = game:GetService("ReplicatedStorage")
+        local guiAssets = rs.Assets.GUI
+        local soundStorage = rs.Util.Sound.Storage.Other
+        guiAssets.DamageCounter.Enabled = false
+        soundStorage:FindFirstChild("LevelUp_Proxy"):Destroy()
+        soundStorage:FindFirstChild("LevelUp"):Destroy()
+        effectContainer.Respawn:Destroy()  
+        effectContainer.LevelUp:Destroy()
+    end
+end)
