@@ -264,21 +264,21 @@ for i, e in pairs(l:GetChildren()) do
 end
 if game.PlaceId == 2753915549 then  OldWolrd=true elseif game.PlaceId == 4442272183 then SecondSea=true elseif game.PlaceId == 7449423635 then ThirdSea=true end
 local SlayerzLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/Library.script"))()
-local Name = "Alchemy Hub | Blox Fruits"
-local Description = "Version : Kaitan [ Premium ] | User : "..game.Players.LocalPlayer.Name
-local Image = "rbxassetid://14981376704"
+local Name = "Xozaity | Blox Fruits"
+local Description = "Version : Kaitan | User : "..game.Players.LocalPlayer.Name
+local Image = "rbxassetid://17113559882"
 local Color = Color3.fromRGB(0, 255, 145)
 local Window = SlayerzLibrary:Window(Name,Description,Image,Color)
-local Tab = Window:Tab("General","9158926514")
+local Tab = Window:Tab("General","17113559882")
 local Section = Tab:Section("- Main -","Left")
 local Section2 = Tab:Section("- Melee Status -","Left")
 local Section3 = Tab:Section("- Sword Status -","Right")
 local Notify = function(Text_i,Duration_i)
 	game.StarterGui:SetCore("SendNotification", {
-		Title = "Alchemy Hub V2",
+		Title = "Xozaity HUB Complete!",
 		Text = Text_i,
 		Duration = Duration_i,
-		Icon = "rbxassetid://14981376704"
+		Icon = "rbxassetid://17113787043"
 	})
 end
 Section:Toggle("Start Farm",false,function(v)
