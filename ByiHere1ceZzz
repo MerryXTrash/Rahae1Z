@@ -39,7 +39,7 @@ local Raid = a:Tab("Raid", "rbxassetid://17113782017")
 local Shop = a:Tab("Shop", "rbxassetid://17113863743")
 local Misc = a:Tab("Misc", "rbxassetid://17113899373")
 
-HomePage:Seperator("Alchemy Hub")
+HomePage:Seperator("Xozaity HUB")
 
 HomePage:Label("Blox Fruits | English Version")
 
