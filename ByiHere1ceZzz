@@ -1,22 +1,22 @@
 repeat wait(1) until game:IsLoaded()
 local AlchemyNotify = function(Text_i,Duration_i)
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Alchemy Hub V2",
+        Title = "Xozaity HUB",
         Text = Text_i,
         Duration = Duration_i,
-        Icon = "rbxassetid://14981376704"
+        Icon = "rbxassetid://17113559882"
     })
 end
 --Key
 wait(0.1)
-AlchemyNotify("Thanks for using Alchemy Hub!",5)
+AlchemyNotify("Thanks for using Xozaity HUB!",5)
 wait(0.1)
 AlchemyNotify("discord.gg/dUdzZskBCC",5)
 wait(0.5)
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
-Notification.new("<Color=Cyan>Alchemy Hub V2Script<Color=/>"):Display()
+Notification.new("<Color=Cyan>Xozaity HUB<Color=/>"):Display()
 wait(0.5)
-Notification.new("<Color=Yellow>Create By x2Neptune<Color=/>"):Display()
+Notification.new("<Color=Yellow>Create By x2Raphael<Color=/>"):Display()
 wait(1)
 repeat
     wait()
@@ -24,20 +24,20 @@ until game.Players.LocalPlayer
 --main
 local ui_link = "https://raw.githubusercontent.com/ZoiIntra/Dec/main/afsZz.lua"
 local a = loadstring(game:HttpGet(ui_link))()
-local a = a:Window("Free Version | Blox Fruit")
+local a = a:Window("Xozaity | Blox Fruit")
 local HomePage = a:Tab("Home", "rbxassetid://16062922985")
 local Main = a:Tab("Main", "rbxassetid://15712703260")
-local Set = a:Tab("Setting", "rbxassetid://15712711639")
-local Farm = a:Tab("Other Farm", "rbxassetid://15712717270")
+local Set = a:Tab("Setting", "rbxassetid://17113757441")
+local Farm = a:Tab("Other Farm", "rbxassetid://17113787043")
 local Stats = a:Tab("Stats", "rbxassetid://15712723981")
-local Race = a:Tab("Race V4", "rbxassetid://15712776421")
-local Event = a:Tab("Games Event", "rbxassetid://15806749681")
+local Race = a:Tab("Race V4", "rbxassetid://17113772972")
+local Event = a:Tab("Games Event", "rbxassetid://17113776169")
 local Tele = a:Tab("Teleport", "rbxassetid://15712738876")
 local Player = a:Tab("Player", "rbxassetid://15712750195")
-local DemonFruit = a:Tab("Devil Fruit", "rbxassetid://15712758182")
-local Raid = a:Tab("Raid", "rbxassetid://15712763124")
-local Shop = a:Tab("Shop", "rbxassetid://15712767144")
-local Misc = a:Tab("Misc", "rbxassetid://15712771666")
+local DemonFruit = a:Tab("Devil Fruit", "rbxassetid://17113791651")
+local Raid = a:Tab("Raid", "rbxassetid://17113782017")
+local Shop = a:Tab("Shop", "rbxassetid://17113863743")
+local Misc = a:Tab("Misc", "rbxassetid://17113899373")
 
 HomePage:Seperator("Alchemy Hub")
 
