@@ -1,0 +1,97 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib")))()
+MakeWindow({
+  Hub = {
+    Title = "The Mimic | Book2ch3(Normal)",
+    Animation = "by : x2Raphaelz"
+  },
+  Key = {
+    KeySystem = false,
+    Title = "Key System",
+    Description = "",
+    KeyLink = "",
+    Keys = {"1234"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "Running the Script...",
+      Incorrectkey = "The key is incorrect",
+      CopyKeyLink = "Copied to Clipboard"
+    }
+  }
+})
+MinimizeButton({
+  Image = "",
+  Size = {40, 40},
+  Color = Color3.fromRGB(10, 10, 10),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 0, 0)
+})
+
+local Main = MakeTab({Name = "Main"})
+local section = AddSection(Main, {"Teste"})
+SetSection(section, "Misc")
+AddButton(Main, {
+  Name = "Fullbright",
+  Callback = function()
+    -
+  end
+})
+AddButton(Main, {
+  Name = "Antilag",
+  Callback = function()
+    -
+  end
+})
+SetSection(section, "Discord")
+AddButton(Main, {
+  Name = "Copy Link",
+  Callback = function()
+    -
+  end
+})
+
+local Main = MakeTab({Name = "Part 1"})
+local section = AddSection(Main, {"Teste"})
+SetSection(section, "Gozu & Mezu")
+AddButton(Main, {
+  Name = "Auto Start",
+  Callback = function()
+    -
+  end
+})
+SetSection(section, "Heart Quest")
+AddButton(Main, {
+  Name = "Get Quest",
+  Callback = function()
+    -
+  end
+})
+AddButton(Main, {
+  Name = "Get Heart",
+  Callback = function()
+    -
+  end
+})
+AddButton(Main, {
+  Name = "Spin Heart",
+  Callback = function()
+    -
+  end
+})
+
+local Main = MakeTab({Name = "Part 2"})
+local section = AddSection(Main, {"Teste"})
+SetSection(section, "Nijibishoma Quest")
+AddButton(Main, {
+  Name = "Start",
+  Callback = function()
+    -
+  end
+})
+AddButton(Main, {
+  Name = "Auto Run",
+  Callback = function()
+    -
+  end
+})
+SetSection(section, "Nijibishoma Craft")
