@@ -1,140 +1,69 @@
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib")))()
-MakeWindow({
-  Hub = {
-    Title = "The Mimic | Book2ch3(Normal)",
-    Animation = "by : x2Raphaelz"
-  },
-  Key = {
-    KeySystem = false,
-    Title = "Key System",
-    Description = "",
-    KeyLink = "",
-    Keys = {"1234"},
-    Notifi = {
-      Notifications = true,
-      CorrectKey = "Running the Script...",
-      Incorrectkey = "The key is incorrect",
-      CopyKeyLink = "Copied to Clipboard"
-    }
-  }
-})
-MinimizeButton({
-  Image = "rbxassetid://16647182763",
-  Size = {40, 40},
-  Color = Color3.fromRGB(10, 10, 10),
-  Corner = true,
-  Stroke = false,
-  StrokeColor = Color3.fromRGB(255, 0, 0)
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "Xozaity HUB " version 0.1(BETA),
+    SubTitle = "By | x2Raphaelz",
+    TabWidth = 130,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true,
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.LeftControl
 })
 
-local Main = MakeTab({Name = "Main"})
-local section = AddSection(Main, {"Teste"})
-SetSection(section, "Misc")
-AddButton(Main, {
-  Name = "Fullbright",
-  Callback = function()
-    -
-  end
-})
-AddButton(Main, {
-  Name = "Antilag",
-  Callback = function()
-    -
-  end
-})
-SetSection(section, "Discord")
-AddButton(Main, {
-  Name = "Copy Link",
-  Callback = function()
-    -
-  end
-})
+local Tabs = {
+    Main = Window:AddTab({ Title = "Main", Icon = "" }),
+    A = Window:AddTab({ Title = "Part 1", Icon = "" }),
+    B = Window:AddTab({ Title = "Part 2", Icon = "" }),
+    C = Window:AddTab({ Title = "Part 3", Icon = "" }),
+    D = Window:AddTab({ Title = "Part 4", Icon = "" }),
+    E = Window:AddTab({ Title = "Part 5", Icon = "" }),
+    F = Window:AddTab({ Title = "Final Part", Icon = "" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+}
 
-local Main = MakeTab({Name = "Part 1"})
-local section = AddSection(Main, {"Teste"})
-SetSection(section, "Gozu & Mezu")
-AddButton(Main, {
-  Name = "Auto Start",
-  Callback = function()
-    -
-  end
-})
-SetSection(section, "Heart Quest")
-AddButton(Main, {
-  Name = "Get Quest",
-  Callback = function()
-    -
-  end
-})
-AddButton(Main, {
-  Name = "Get Heart",
-  Callback = function()
-    -
-  end
-})
-AddButton(Main, {
-  Name = "Spin Heart",
-  Callback = function()
-    -
-  end
-})
+local Options = Fluent.Options
 
-local Main = MakeTab({Name = "Part 2"})
-local section = AddSection(Main, {"Teste"})
-SetSection(section, "Nijibishoma Quest")
-AddButton(Main, {
-  Name = "Start",
-  Callback = function()
-    -
-  end
-})
-AddButton(Main, {
-  Name = "Auto Run",
-  Callback = function()
-    -
-  end
-})
-SetSection(section, "Nijibishoma Craft")
-AddButton(Main, {
-  Name = "Get FireItem",
-  Callback = function()
-    -
-  end
-})
-AddButton(Main, {
-  Name = "Craft Item",
-  Callback = function()
-    -
-  end
-})
-SetSection(section, "Item")
-AddButton(Main, {
-  Name = "Item 1",
-  Callback = function()
-    -
-  end
-})
-AddButton(Main, {
-  Name = "Item 2",
-  Callback = function()
-    -
-  end
-})
-AddButton(Main, {
-  Name = "Item 3",
-  Callback = function()
-    -
-  end
-})
-AddButton(Main, {
-  Name = "Item 4",
-  Callback = function()
-    -
-  end
-})
-AddButton(Main, {
-  Name = "Item 5",
-  Callback = function()
-    -
-  end
-})
+do
+    Fluent:Notify({
+        Title = "Xozaity HUB",
+        Content = "Loading Complete",
+        SubContent = "Thxnk for Using",
+        Duration = 5
+    })
+
+Tabs.Main:AddParagraph({
+        Title = "Wellcome!",
+        Content = "Thxnk for Using"
+    })
+
+Tabs.Main:AddParagraph({
+        Title = "Discord",
+        Content = "https://discord.com/invite/j5rPFbU7"
+    })
+
+    Tabs.Main:AddButton({
+        Title = "Copy Link",
+        Description = "Press to Copy Link invite Discord Server",
+        Callback = function()
+            Window:Dialog({
+                Title = "Do you want to Copy",
+                Content = "Choose",
+                Buttons = {
+                    {
+                        Title = "YES",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "NO",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
