@@ -185,7 +185,7 @@ do
 
 
 
-    Tabs.Main:AddParagraph({
+    Tabs.B:AddParagraph({
         Title = "Puzzle Quest",
         Content = "Enjoy with My Scirpt"
     })
@@ -207,7 +207,7 @@ do
 
 
 
-    local Dropdown = Tabs.A:AddDropdown("Select", {
+    local Dropdown = Tabs.B:AddDropdown("Select", {
         Title = "Select Puzzle 2",
         Values = {"1", "2", "3", "4"},
         Multi = false,
@@ -236,6 +236,32 @@ do
     end)
 
 
+
+    Tabs.B:AddButton({
+        Title = "Auto Run",
+        Description = "Dodomeki Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready!!!!!!!!!",
+                Content = "Auto Run",
+                Buttons = {
+                    {
+                        Title = "RUN!!!!!!",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "RUN!!!!!!!",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })        
+    
     
     
     local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Toggle", Default = false })
