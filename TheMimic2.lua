@@ -145,6 +145,155 @@ do
     end)
 
 
+
+    Tabs.A:AddButton({
+        Title = "Start",
+        Description = "Nijibishoma Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Start",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Nah",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })        
+
+
+
+    Tabs.A:AddButton({
+        Title = "Auto Run",
+        Description = "Nijibishoma Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Auto Run",
+                Buttons = {
+                    {
+                        Title = "Run!!",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Run!!",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })        
+
+
+    
+    Tabs.B:AddButton({
+        Title = "Get Purple Flame",
+        Description = "Nijibishoma Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Get Purple Flame",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Nah",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })        
+    
+
+
+    Tabs.B:AddButton({
+        Title = "Craft Item",
+        Description = "Nijibishoma Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Craft Item",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Nah",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })        
+
+
+
+    local Dropdown = Tabs.B:AddDropdown("Select", {
+        Title = "Select Item",
+        Values = {"1", "2", "3", "4", "5"},
+        Multi = false,
+        Default = 1,
+    })
+
+    Dropdown:SetValue("1")
+
+    Dropdown:OnChanged(function(Value)
+        print("Dropdown changed:", Value)
+    end)
+
+
+
+    Tabs.B:AddButton({
+        Title = "Get Out",
+        Description = "Nijibishoma Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Get Out",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Nah",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })        
+
     
     
     local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Toggle", Default = false })
