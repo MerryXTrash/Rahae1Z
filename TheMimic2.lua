@@ -88,7 +88,10 @@ do
                     {
                         Title = "Yes",
                         Callback = function()
-                            print("Confirmed the dialog.")
+                            local Tween = game:GetService("TweenService")
+
+local Tw = Tween:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0),
+{CFrame = CFrame.new(-558.4486694335938, 14.974227905273438, 418.7130126953125)}):Play()
                         end
                     },
                     {
