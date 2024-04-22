@@ -68,53 +68,35 @@ MinimizeButton({
 
 local Main = MakeTab({Name = "Part 1"})
 local section = AddSection(Main, {"Teste"})
-
 SetSection(section, "Gozu & Mezu")
-
 AddButton(Main, {
   Name = "Start",
   Callback = function()
     game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-558.4486694335938, 14.974227905273438, 418.7130126953125)
     end
-
 SetSection(section, "Heart Quest")
-
 AddButton(Main, {
   Name = "Get Quest",
   Callback = function()
-    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-135.22731018066406, 45.49604797363281, 74.98370361328125)
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-558.4486694335938, 14.974227905273438, 418.7130126953125)
     end
-
 SetSection(section, "Heart")
-
 AddButton(Main, {
   Name = "Get Heart",
   Callback = function()
-      while do wait()
-  wait(5)
-  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-170.03271484375, 45.49604797363281, 62.685909271240234)
-  wait(5)
-  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-126.65979766845703, 45.47053909301758, 124.94349670410156)
-  wait(5)
-  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108.16446685791016, 46.46612548828125, 23.5269832611084)
-  wait(5)
-  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-22.932025909423828, 45.47053909301758, 42.988224029541016)
-                end
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-558.4486694335938, 14.974227905273438, 418.7130126953125)
     end
 
 local Main = MakeTab({Name = "Part 2"})
-local section = AddSection(Main, {"Teste"})
-            
-SetSection(section, "Nijibishoma Quest")
-              
-  AddButton(Main, {
+local section = AddSection(Main, {"Teste"})         
+SetSection(section, "Nijibishoma Quest")            
+AddButton(Main, {
   Name = "Start",
   Callback = function()
-    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-261.6829528808594, 45.47053527832031, -31.991308212280273)
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-558.4486694335938, 14.974227905273438, 418.7130126953125)
     end
-                  
-  AddButton(Main, {
-  Name = "Auto Run",
+AddButton(Main, {
+  Name = "Auto RUN",
   Callback = function()
-    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-100.70361328125, 41.822227478027344, -396.1400146484375)
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-558.4486694335938, 14.974227905273438, 418.7130126953125)
     end
