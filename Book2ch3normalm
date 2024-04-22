@@ -130,6 +130,3 @@ SetSection(section, "Nijibishoma Quest")
   Callback = function()
     game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-100.70361328125, 41.822227478027344, -396.1400146484375)
     end
-
-jkkk
-              
