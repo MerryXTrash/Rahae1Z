@@ -45,7 +45,7 @@ do
 
     Tabs.Main:AddParagraph({
         Title = "Discord",
-        Content = "Xxxxx"
+        Content = "https://discord.com/invite/j5rPFbU7"
     })
     
 
