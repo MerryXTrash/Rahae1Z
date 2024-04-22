@@ -76,7 +76,34 @@ do
     })
 
 
+    
+    Tabs.A:AddButton({
+        Title = "Start",
+        Description = "Gozu and Mezu",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Start",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Nah",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
 
+
+    
     local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Toggle", Default = false })
 
     Toggle:OnChanged(function()
