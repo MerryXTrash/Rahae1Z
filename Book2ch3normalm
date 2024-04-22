@@ -1,0 +1,135 @@
+--Quest = -135.22731018066406, 45.49604797363281, 74.98370361328125
+--Heart 1 = -170.03271484375, 45.49604797363281, 62.685909271240234
+--Heart 2 = -126.65979766845703, 45.47053909301758, 124.94349670410156
+--Heart 3 = -108.16446685791016, 46.46612548828125, 23.5269832611084
+--Heart 4 = -22.932025909423828, 45.47053909301758, 42.988224029541016
+
+--Hand 1 = -73.57794952392578, 45.470542907714844, -4.7153215408325195
+--Hand 2 = -87.79602813720703, 45.470542907714844, 12.095586776733398
+--Hand 3 = -72.2856674194336, 45.470542907714844, 25.910654067993164
+--Hand 4 = -56.5331916809082, 45.470542907714844, 8.17416763305664
+--MidlePOS = -65.28243255615234, 46.058013916015625, 2.701279640197754
+
+--Startposb = -261.6829528808594, 45.47053527832031, -31.991308212280273
+--Finalpos  = -100.70361328125, 41.822227478027344, -396.1400146484375
+--Creafepos = -72.74683380126953, 3.999999523162842, -451.3816833496094
+--Touchpos = 14.054905891418457, 3.999147891998291, -546.889404296875
+
+--item1 = -179.07469177246094, 4.076997756958008, -502.29949951171875
+--item2 = -27.785728454589844, 3.999999523162842, -459.4356994628906
+--item3 = -58.27397155761719, 3.999488115310669, -598.005126953125
+--item4 = 38.163761138916016, 3.9993178844451904, -565.2169799804688
+
+--start = -558.4486694335938, 14.974227905273438, 418.7130126953125
+
+--finalcreafe = -75.31298065185547, 5.489102363586426, -882.1735229492188
+
+--start part 3 = -325.029296875, 6.5852508544921875, -1116.0654296875
+--puzzle 1 = -391.8599548339844, 8.999996185302734, -1362.5831298828125
+--puzzle 2 = -202.50393676757812, 8.770676612854004, -1395.2413330078125
+--puzzle 3 = -491.8636474609375, 11.406656265258789, -1438.2747802734375
+
+--part 3.2
+--puzzle 1 = -686.72265625, 8.978157997131348, -2046.48193359375
+--puzzle 2 = -1012.5798950195312, 8.999996185302734, -1968.2677001953125
+--puzzle 3 = -758.9519653320312, 18.87479019165039, -1701.5025634765625
+--puzzle 4 = -343.24151611328125, 8.999998092651367, -1701.875244140625
+--puzzle 5 = -805.2908935546875, 8.999998092651367, -1358.1083984375
+
+function Heart()
+  while do wait()
+  wait(5)
+  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-170.03271484375, 45.49604797363281, 62.685909271240234)
+  wait(5)
+  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-126.65979766845703, 45.47053909301758, 124.94349670410156)
+  wait(5)
+  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108.16446685791016, 46.46612548828125, 23.5269832611084)
+  wait(5)
+  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-22.932025909423828, 45.47053909301758, 42.988224029541016)
+end
+
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib")))()
+MakeWindow({
+  Hub = {
+    Title = "Xozaity HUB | Book2ch3(Normal)",
+    Animation = "By : Raphae1"
+  },
+  Key = {
+    KeySystem = false,
+    Title = "Xozaity HUB",
+    Description = "",
+    KeyLink = "https://sub4unlock.io/1kPsC",
+    Keys = {"Exility-QT2M-UVA1-2550"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "Key is Correct wait(..)",
+      Incorrectkey = "The key is incorrect",
+      CopyKeyLink = "Copied to Clipboard"
+    }
+  }
+})
+
+MinimizeButton({
+  Image = "rbxassetid://16647182763",
+  Size = {55, 55},
+  Color = Color3.fromRGB(10, 10, 10),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 0, 0)
+})
+
+local Main = MakeTab({Name = "Part 1"})
+local section = AddSection(Main, {"Teste"})
+
+SetSection(section, "Gozu & Mezu")
+
+AddButton(Main, {
+  Name = "Start",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-558.4486694335938, 14.974227905273438, 418.7130126953125)
+    end
+
+SetSection(section, "Heart Quest")
+
+AddButton(Main, {
+  Name = "Get Quest",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-135.22731018066406, 45.49604797363281, 74.98370361328125)
+    end
+
+SetSection(section, "Heart")
+
+AddButton(Main, {
+  Name = "Get Heart",
+  Callback = function()
+      while do wait()
+  wait(5)
+  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-170.03271484375, 45.49604797363281, 62.685909271240234)
+  wait(5)
+  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-126.65979766845703, 45.47053909301758, 124.94349670410156)
+  wait(5)
+  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108.16446685791016, 46.46612548828125, 23.5269832611084)
+  wait(5)
+  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-22.932025909423828, 45.47053909301758, 42.988224029541016)
+                end
+    end
+
+local Main = MakeTab({Name = "Part 2"})
+local section = AddSection(Main, {"Teste"})
+            
+SetSection(section, "Nijibishoma Quest")
+              
+  AddButton(Main, {
+  Name = "Start",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-261.6829528808594, 45.47053527832031, -31.991308212280273)
+    end
+                  
+  AddButton(Main, {
+  Name = "Auto Run",
+  Callback = function()
+    game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-100.70361328125, 41.822227478027344, -396.1400146484375)
+    end
+
+jkkk
+              
