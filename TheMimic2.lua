@@ -14,13 +14,13 @@ local Window = Fluent:CreateWindow({
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "" }),
-    A = Window:AddTab({ Title = "Part 1", Icon = "" }),
-    B = Window:AddTab({ Title = "Part 2", Icon = "" }),
-    C = Window:AddTab({ Title = "Part 3", Icon = "" }),
-    D = Window:AddTab({ Title = "Part 4", Icon = "" }),
-    E = Window:AddTab({ Title = "Part 5", Icon = "" }),
-    F = Window:AddTab({ Title = "Final Part", Icon = "" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "Bookmark" }),
+    A = Window:AddTab({ Title = "Part 1", Icon = "AlignJustify" }),
+    B = Window:AddTab({ Title = "Part 2", Icon = "AlignJustify" }),
+    C = Window:AddTab({ Title = "Part 3", Icon = "AlignJustify" }),
+    D = Window:AddTab({ Title = "Part 4", Icon = "AlignJustify" }),
+    E = Window:AddTab({ Title = "Part 5", Icon = "AlignJustify" }),
+    F = Window:AddTab({ Title = "Final Part", Icon = "Axe" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
