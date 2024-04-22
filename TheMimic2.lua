@@ -187,7 +187,7 @@ do
 
     Tabs.B:AddParagraph({
         Title = "Puzzle Quest",
-        Content = "Enjoy with My Scirpt"
+        Content = "Select The Puzzle"
     })
 
 
@@ -235,6 +235,60 @@ do
         print("Dropdown changed:", Value)
     end)
 
+
+
+    Tabs.A:AddButton({
+        Title = "Start",
+        Description = "Nijibishoma Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Start",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Nah",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+    Tabs.A:AddButton({
+        Title = "Auto Run",
+        Description = "Nijibishoma Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Auto Run",
+                Buttons = {
+                    {
+                        Title = "RUN!",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "RUN!!!!!",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
 
 
     Tabs.B:AddButton({
