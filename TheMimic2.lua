@@ -103,6 +103,49 @@ do
     })
 
 
+
+    Tabs.A:AddButton({
+        Title = "Get Quest",
+        Description = "Heart Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Get Quest",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Nah",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })    
+
+    
+
+    local Dropdown = Tabs.A:AddDropdown("Select", {
+        Title = "Select Heart",
+        Values = {"1", "2", "3", "4"},
+        Multi = false,
+        Default = 1,
+    })
+
+    Dropdown:SetValue("1")
+
+    Dropdown:OnChanged(function(Value)
+        print("Dropdown changed:", Value)
+    end)
+
+
+    
     
     local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Toggle", Default = false })
 
