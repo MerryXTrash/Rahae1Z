@@ -131,7 +131,7 @@ do
 
 
 
-    Tabs.B:AddButton({
+    Tabs.C:AddButton({
         Title = "Start",
         Description = "Dodomeki Quest",
         Callback = function()
@@ -158,7 +158,7 @@ do
 
 
 
-    Tabs.B:AddButton({
+    Tabs.C:AddButton({
         Title = "Safe Mode",
         Description = "Dodomeki Quest(If Bug Click Start Again.)",
         Callback = function()
@@ -185,14 +185,14 @@ do
 
 
 
-    Tabs.B:AddParagraph({
+    Tabs.C:AddParagraph({
         Title = "Puzzle Quest",
         Content = "Select The Puzzle"
     })
 
 
 
-    local Dropdown = Tabs.B:AddDropdown("Select", {
+    local Dropdown = Tabs.C:AddDropdown("Select", {
         Title = "Select Puzzle",
         Values = {"1", "2", "3", "4", "5", "6", "7", "8"},
         Multi = false,
@@ -207,7 +207,7 @@ do
 
 
 
-    local Dropdown = Tabs.B:AddDropdown("Select", {
+    local Dropdown = Tabs.C:AddDropdown("Select", {
         Title = "Select Puzzle 2",
         Values = {"1", "2", "3", "4"},
         Multi = false,
@@ -291,7 +291,7 @@ do
     
 
 
-    Tabs.B:AddButton({
+    Tabs.C:AddButton({
         Title = "Auto Run",
         Description = "Dodomeki Quest",
         Callback = function()
@@ -315,7 +315,103 @@ do
             })
         end
     })        
+
+
+
+    Tabs.B:AddButton({
+        Title = "Get Purple Flame",
+        Description = "Nijibishoma Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Start",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Nah",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
     
+    
+
+    Tabs.B:AddButton({
+        Title = "Craft Item",
+        Description = "Nijibishoma Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Start",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Nah",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+
+
+    local Dropdown = Tabs.A:AddDropdown("Select", {
+        Title = "Select Item",
+        Values = {"1", "2", "3", "4", "5"},
+        Multi = false,
+        Default = 1,
+    })
+
+    Dropdown:SetValue("1")
+
+    Dropdown:OnChanged(function(Value)
+        print("Dropdown changed:", Value)
+    end)
+
+    
+
+    Tabs.B:AddButton({
+        Title = "Get Out",
+        Description = "Nijibishoma Quest",
+        Callback = function()
+            Window:Dialog({
+                Title = "Are you Ready?",
+                Content = "Start",
+                Buttons = {
+                    {
+                        Title = "Yes",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                        end
+                    },
+                    {
+                        Title = "Nah",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
     
     
     local Toggle = Tabs.Main:AddToggle("MyToggle", {Title = "Toggle", Default = false })
