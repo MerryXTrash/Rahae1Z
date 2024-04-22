@@ -12,6 +12,7 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.LeftControl
 })
 
+
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "" }),
     A = Window:AddTab({ Title = "Part 1", Icon = "" }),
@@ -23,6 +24,7 @@ local Tabs = {
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
+
 local Options = Fluent.Options
 
 do
@@ -33,15 +35,21 @@ do
         Duration = 5
     })
 
+
+
 Tabs.Main:AddParagraph({
         Title = "Wellcome!",
         Content = "Thxnk for Using"
     })
 
+
+
 Tabs.Main:AddParagraph({
         Title = "Discord",
         Content = "https://discord.com/invite/j5rPFbU7"
     })
+
+
 
     Tabs.Main:AddButton({
         Title = "Copy Link",
@@ -67,6 +75,8 @@ Tabs.Main:AddParagraph({
             })
         end
     })
+
+
 
 local Colorpicker = Tabs.Main:AddColorpicker("Colorpicker", {
         Title = "Colorpicker",
