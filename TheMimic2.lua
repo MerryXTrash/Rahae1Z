@@ -372,7 +372,7 @@ do
 
 
 
-    local Dropdown = Tabs.A:AddDropdown("Select", {
+    local Dropdown = Tabs.B:AddDropdown("Select", {
         Title = "Select Item",
         Values = {"1", "2", "3", "4", "5"},
         Multi = false,
