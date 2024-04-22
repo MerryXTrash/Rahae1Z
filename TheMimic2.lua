@@ -185,9 +185,16 @@ do
 
 
 
+    Tabs.Main:AddParagraph({
+        Title = "Puzzle Quest",
+        Content = "Enjoy with My Scirpt"
+    })
+
+
+
     local Dropdown = Tabs.B:AddDropdown("Select", {
         Title = "Select Puzzle",
-        Values = {"1", "2", "3", "4"},
+        Values = {"1", "2", "3", "4", "5", "6", "7", "8"},
         Multi = false,
         Default = 1,
     })
