@@ -36,18 +36,6 @@
 --puzzle 4 = -343.24151611328125, 8.999998092651367, -1701.875244140625
 --puzzle 5 = -805.2908935546875, 8.999998092651367, -1358.1083984375
 
-function Heart()
-  while do wait()
-  wait(5)
-  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-170.03271484375, 45.49604797363281, 62.685909271240234)
-  wait(5)
-  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-126.65979766845703, 45.47053909301758, 124.94349670410156)
-  wait(5)
-  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-108.16446685791016, 46.46612548828125, 23.5269832611084)
-  wait(5)
-  game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-22.932025909423828, 45.47053909301758, 42.988224029541016)
-end
-
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib")))()
 MakeWindow({
   Hub = {
