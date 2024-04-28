@@ -1,1 +1,44 @@
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib")))()
+MakeWindow({
+  Hub = {
+    Title = "Xozaity HUB",
+    Animation = "By : Raphae1"
+  },
+  Key = {
+    KeySystem = false,
+    Title = "Xozaity HUB",
+    Description = "",
+    KeyLink = "https://sub4unlock.io/1kPsC",
+    Keys = {"Exility-QT2M-UVA1-2550"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "Key is Correct wait(..)",
+      Incorrectkey = "The key is incorrect",
+      CopyKeyLink = "Copied to Clipboard"
+    }
+  }
+})
+
+MinimizeButton({
+  Image = "rbxassetid://16647182763",
+  Size = {55, 55},
+  Color = Color3.fromRGB(10, 10, 10),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 0, 0)
+})
+
+--farm
+local Main = MakeTab({Name = "Main"})
+local section = AddSection(Main, {"Teste"})
+SetSection(section, "By Xenon hub")
+AddButton(Main, {
+  Name = "สุ่ม",
+  Callback = function()
+_G.Auto = true
+while _G.auto do wait()
+wait(1)
+    game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
+end
+  end
+})
