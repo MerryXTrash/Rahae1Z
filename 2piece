@@ -2,7 +2,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/ma
 MakeWindow({
   Hub = {
     Title = "Xerloraity",
-    Animation = "By : Krampus_exe"
+    Animation = "By : Eie1kuyz4"
   },
   Key = {
     KeySystem = false,
