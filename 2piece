@@ -1,8 +1,8 @@
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib")))()
 MakeWindow({
   Hub = {
-    Title = "Xozaity HUB",
-    Animation = "By : Raphae1"
+    Title = "Xerloraity",
+    Animation = "By : Krampus_exe"
   },
   Key = {
     KeySystem = false,
